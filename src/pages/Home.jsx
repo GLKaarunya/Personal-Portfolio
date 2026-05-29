@@ -1,0 +1,84 @@
+import Avatar from "../components/Avatar";
+import NavBar from "../components/NavBar";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Achievements from "../components/Achievements";
+import Journey from "../components/Journey";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+
+function Home() 
+{
+    return (
+        <div className="bg-black min-h-screen">
+
+            <NavBar />
+
+            <div id="home" className="flex items-center justify-between px-24 min-h-screen">
+
+                <div className="text-white max-w-3xl text-center">
+
+                    <h1 className="text-7xl font-bold">
+                        Hello, I'm
+                    </h1>
+
+                    <h1 className="text-7xl font-bold leading-normal bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
+                        GL Kaarunya
+                    </h1>
+
+                    <p className="text-2xl text-zinc-400 mt-4">
+                        ECE Student • Developer • Open Source Enthusiast
+                    </p>
+
+                    <p className="text-zinc-400 text-xl mt-10 leading-relaxed max-w-2xl mx-auto">
+                        I'm an Electronics and Communication Engineering student at LNMIIT Jaipur
+                        passionate about software development, open source, and problem solving.
+                        I enjoy building real-world projects, exploring new technologies, and
+                        continuously improving my skills as an engineer and developer.
+                    </p>
+
+                    <div className="flex justify-center gap-8 mt-12">
+
+                        <a
+                            href="#contact"
+                            className="p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:scale-105 transition duration-300"
+                        >
+                            <div className="px-8 py-3 bg-black rounded-full text-white font-medium">
+                                Let's Connect
+                            </div>
+                        </a>
+
+                        <a
+                            href="/resume.pdf"
+                            className="p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:scale-105 transition duration-300"
+                        >
+                            <div className="px-8 py-3 bg-black rounded-full text-white font-medium">
+                                Download Resume
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <Avatar />
+
+            </div>
+
+            <Skills />
+
+            <Projects />
+
+            <Achievements />
+
+            <Journey />
+
+            <Contact />
+
+            <Footer />
+
+        </div>
+    );
+}
+
+export default Home;
