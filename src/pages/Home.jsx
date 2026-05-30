@@ -7,37 +7,39 @@ import Journey from "../components/Journey";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-function Home() 
-{
+function Home() {
     return (
         <div className="bg-black min-h-screen">
 
             <NavBar />
 
-            <div id="home" className="flex items-center justify-between px-24 min-h-screen">
+            <div
+                id="home"
+                className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 md:px-12 lg:px-24 min-h-screen gap-12 lg:gap-0"
+            >
 
                 <div className="text-white max-w-3xl text-center">
 
-                    <h1 className="text-7xl font-bold">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
                         Hello, I'm
                     </h1>
 
-                    <h1 className="text-7xl font-bold leading-normal bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-normal bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
                         GL Kaarunya
                     </h1>
 
-                    <p className="text-2xl text-zinc-400 mt-4">
+                    <p className="text-lg md:text-xl lg:text-2xl text-zinc-400 mt-4">
                         ECE Student • Developer • Open Source Enthusiast
                     </p>
 
-                    <p className="text-zinc-400 text-xl mt-10 leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-zinc-400 text-base md:text-lg lg:text-xl mt-8 lg:mt-10 leading-relaxed max-w-2xl mx-auto">
                         I'm an Electronics and Communication Engineering student at LNMIIT Jaipur
                         passionate about software development, open source, and problem solving.
                         I enjoy building real-world projects, exploring new technologies, and
                         continuously improving my skills as an engineer and developer.
                     </p>
 
-                    <div className="flex justify-center gap-8 mt-12">
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mt-10 lg:mt-12">
 
                         <a
                             href="#contact"
@@ -74,7 +76,7 @@ function Home()
             <Journey />
 
             <Contact />
-
+            
             <Footer />
 
         </div>
