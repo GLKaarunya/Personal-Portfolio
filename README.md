@@ -1,3 +1,3 @@
 **Here's The Deployment Link -** 
 
-https://personal-portfolio-git-master-glk-aarunya-s-projects.vercel.app/
+https://personal-portfolio-ashy-omega-64.vercel.app/
